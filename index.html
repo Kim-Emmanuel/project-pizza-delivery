@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Delivery</title>
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Pizza Delivery</a>
+        <div class="menu-toggle"></div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Onder online</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="clearfix"></div>
+    </header>
+    <div class="main">
+        <div class="section-title">
+            <h2>Pizza Menu</h2>
+            <p>Exercise? I thought You said Extra slice!</p>
+            <div class="menu">
+                <div class="menu-col">
+                    <h4>Classic</h4>
+                    <div class="single-menu">
+                        <img src="image/pizza-329523_960_720.jpg" alt="">
+                        <div class="menu-content">
+                            <h5>Beef<span>1600/=</span></h5>
+                            <p>Chicken & Beef - green pepper - spice - chilly.</p>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="image/cheese-1869708__340.jpg" alt="">
+                        <div class="menu-content">
+                            <h5>Cheese<span>1200/=</span></h5>
+                            <p>Cheese - salads - spice - green pepper. </p>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="image/pizza-386717_960_720.jpg" alt="">
+                        <div class="menu-content">
+                            <h5>Beef Pepp<span>950/=</span></h5>
+                            <p> Beef - Pepperoni - salads</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-col">
+                    <h4>Extra</h4>
+                    <div class="single-menu">
+                        <img src="image/photo-1604382354936-07c5d9983bd3.jpeg" alt="">
+                        <div class="menu-content">
+                            <h5>Beef Pepp +<span>1100/=</span></h5>
+                            <p>Beef - pepperoni - spice - vinger.</p>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="image/pizza-1373508_960_720.jpg" alt="">
+                        <div class="menu-content">
+                            <h5>Local cheese<span>600/=</span></h5>
+                            <p>White cheese - pepper - spices</p>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="image/pizza-2000615__340.jpg" alt="">
+                        <div class="menu-content">
+                            <h5>Chicken<span>1000/=</span></h5>
+                            <p>Chicken - soda - spices - chilly.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-col">
+                    <h4>Deluxe</h4>
+                    <div class="single-menu">
+                        <img src="image/pizza-3007395__340.jpg" alt="">
+                        <div class="menu-content">
+                            <h5>Veg Feast<span>1200/=</span></h5>
+                            <p>Veg - feast - fresh onions.</p>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="image/pizza-3199081__340.webp" alt="">
+                        <div class="menu-content">
+                            <h5>Roast Veg<span>1000/=</span></h5>
+                            <p>Roasted veg - spice - chilly.</p>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="image/pizza-1949157__340.webp" alt="">
+                        <div class="menu-content">
+                            <h5>Pizza Pie<span>250/=</span></h5>
+                            <p>Pie checken - beef - pepperoni.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form action="#" id="form" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Username" required>
+    </div>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="email" required>
+    </div>
+    <div>
+        <label for="order">Pizza Order:</label>
+        <input type="text" name="order" id="order" placeholder="Enter your order" required>
+    </div>
+    <button class="button">Order</button>
+    </form>
+
+    <div id="list">
+        <h3>Your Order</h3>
+        <ul id="orders"></ul>
+    </div>
+    <div class="location">
+        <p>Click the button to get your coordinates.</p>
+        <div class="location-btn">
+        <button onclick="getLocation()">Click Me</button>
+    </div>
+        <p id="cords"></p>
+    </div>
+    
+    <div class="info">
+        <p>Welcome to our site <strong>Pizza Delivery</strong></p>
+        <p>Make your online order now and We'll deliver at your door</p>
+        <p>Never boring! we offer you a <strong>Free</strong> pizza package for each order made on Tuesday and Friday</p>
+        <p>Exercise? I thought You said Extra slice!</p>
+    </div>
+    <section class="footer">
+        <div class="social">
+            <a href="#"><i class="fab fa-google"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">About us</a>
+            </li>
+            <li>
+                <a href="#">Terms</a>
+            </li>
+            <li>
+                <a href="#">Privacy Policy</a>
+            </li>
+        </ul>
+        <p class="copyright">
+            copyright &copy; Pizza Delivery. designed by KD Industry
+        </p>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
